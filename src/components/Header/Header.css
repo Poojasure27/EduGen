@@ -1,0 +1,112 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    list-style: none;
+}
+.menu__link{
+    font-weight: 400;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.menu__link:hover{
+    color: var(--link-active);
+}
+
+.logo h2{
+    color: var(--primary-color);
+}
+
+
+.light__mode span{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    column-gap: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.header__strink{
+
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.login__btn{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    
+}
+.login_button{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+.login_button{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.mobile__menu{
+    color: #fff ;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive */
+
+@media only screen and(max-width:992px) {
+
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(6, 11, 26, 0.363);
+        z-index: 99999;
+        display: none;
+
+    
+    }
+     .menu{
+        flex-direction: column;
+        background: #0c123d;
+        width: 250px;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 999999;
+
+
+     }
+}
