@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import App from './App';
 import Dashboard from './Dashboard';
+import Messages from './Messages';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />
   },
+
+  {
+    path: "/messages",
+    element: <Messages />
+  }
 ]);
 
 

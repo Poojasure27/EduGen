@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/UI/Navbar';
 
 import Attendance from '../src/pages/Attendance';
-import Messages from '../src/pages/Messages';
+import Messages from './pages/MessagesComponent';
 import Settings from '../src/pages/Settings'
 
 
@@ -13,6 +13,7 @@ const Dashboard = () => {
   <>
   
     <Navbar />
+    
     
    
    
